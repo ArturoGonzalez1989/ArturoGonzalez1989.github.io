@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 const CategoryIcons = {
-  "Data Engineering": (
+  "Ingeniería de Datos": (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 24 24"
@@ -11,7 +11,7 @@ const CategoryIcons = {
       <path d="M4 5C4 3.89543 4.89543 3 6 3H18C19.1046 3 20 3.89543 20 5V19C20 20.1046 19.1046 21 18 21H6C4.89543 21 4 20.1046 4 19V5ZM6 5V19H18V5H6Z" />
     </svg>
   ),
-  "Cloud & DevOps": (
+  "Cloud y DevOps": (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 24 24"
@@ -21,7 +21,7 @@ const CategoryIcons = {
       <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM7 17L5.59 15.59L10.17 11H7V9H13V15H11V11.83L7 17ZM17 13H15V11H17V13Z" />
     </svg>
   ),
-  "Teaching & Mentoring": (
+  "Docencia y Mentoría": (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 24 24"
@@ -37,20 +37,20 @@ const SkillsList = () => {
   const [openItem, setOpenItem] = useState<string | null>(null);
 
   const skills = {
-    "Data Engineering": [
-      "ETL/ELT pipeline design using Snowflake, ADF & dbt",
-      "Batch and real-time data integration (Spark, Kafka)",
-      "Data quality, observability & metadata governance"
+    "Ingeniería de Datos": [
+      "Diseño de pipelines ETL/ELT con Snowflake, ADF y dbt",
+      "Integración de datos batch y en tiempo real (Spark, Kafka)",
+      "Calidad de datos, observabilidad y gobierno de metadatos"
     ],
-    "Cloud & DevOps": [
-      "CI/CD with Azure DevOps & Bitbucket",
-      "Cloud data architecture on Microsoft Azure",
-      "Orchestration and automation (Airflow, Data Factory)"
+    "Cloud y DevOps": [
+      "CI/CD con Azure DevOps y Bitbucket",
+      "Arquitectura de datos en la nube (Microsoft Azure)",
+      "Orquestación y automatización con Airflow y Data Factory"
     ],
-    "Teaching & Mentoring": [
-      "Lecturer at UOC for Data Warehousing & Analytics",
-      "Academic content creator and Final Degree advisor",
-      "Mentoring students in data science & BI"
+    "Docencia y Mentoría": [
+      "Profesor en UOC en áreas de Big Data y Analytics",
+      "Creador de contenidos académicos y tutor de TFG",
+      "Mentoría a estudiantes en ciencia de datos e inteligencia de negocio"
     ]
   };
 
@@ -61,7 +61,7 @@ const SkillsList = () => {
   return (
     <div className="text-left pt-3 md:pt-9">
       <h3 className="text-[var(--white)] text-3xl md:text-4xl font-semibold md:mb-6">
-        What I do?
+        ¿Qué hago?
       </h3>
       <ul className="space-y-4 mt-4 text-lg">
         {Object.entries(skills).map(([category, items]) => (
